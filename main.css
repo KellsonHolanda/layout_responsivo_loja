@@ -116,8 +116,59 @@ li>p{
     cursor: pointer;
     
 }
+@media screen and (max-width: 414px){
+    .container{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    h1, nav li{
+        display: grid;
+        grid-template-columns: min-content;
+    }
+    h1{
+        font-size: 18px;
+    }
+    h2, a{
+        font-size: 14px;
+    }
+    h3{
+        font-size: 14px;
+    }
+    #sobre{
+        display:block;
+        margin-left:0;
+    }
+    .productList{
+        grid-template-columns: 1fr;
+    }
+    .productList li {
+        margin-left: 0;
+    }
+    .sobre {
+        margin: 17px 0;
+    }
+    .sobre>p {
+        font-size: 13px;
+    }
+    li>p{
+        font-size: 13px;
+    }
+    .price{
+        font-size: 13px;
+    }
+    .btn{
+        font-size: 11px;
+    }
+    small, small>a{
+        font-size: 9px;
+    }
 
-@media screen and (max-width: 640px) {
+}
+
+
+@media screen and (min-width: 415px) and (max-width: 640px) {
     .container{
         display: grid;
         grid-template-columns: 30% 70%;
